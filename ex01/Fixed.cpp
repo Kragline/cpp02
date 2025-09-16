@@ -60,8 +60,8 @@ int		Fixed::toInt( void ) const
 	return (_value / (1 << Fixed::_fractionalBits));
 }
 
-std::ostream	&operator<<(std::ostream &out, const Fixed &obj)
+std::ostream	&operator<<(std::ostream &stream, const Fixed &obj)
 {
-	out << obj.toFloat();
-	return out;
+	stream << obj.toFloat();
+	return (stream);
 }
